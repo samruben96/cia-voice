@@ -38,6 +38,7 @@ pnpm run format:check      # Check formatting
 ## Environment Setup
 
 Copy `.env.example` to `.env.local` and configure:
+
 - `LIVEKIT_URL` - LiveKit Cloud or self-hosted server URL
 - `LIVEKIT_API_KEY` - API key from LiveKit Cloud
 - `LIVEKIT_API_SECRET` - API secret from LiveKit Cloud
@@ -85,6 +86,7 @@ tools: {
 ## Realtime Models
 
 To use OpenAI Realtime API instead of the pipeline:
+
 1. Install `@livekit/agents-plugin-openai`
 2. Set `OPENAI_API_KEY` in `.env.local`
 3. Replace AgentSession setup with `llm: new openai.realtime.RealtimeModel({ voice: 'marin' })`
